@@ -4,16 +4,17 @@ spring:
 
   # 数据源配置项 TODO 多数据源；TODO 监控配置
   datasource:
-    url: jdbc:mysql://127.0.1:33061/ruoyi-vue-pro?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
+    url: jdbc:mysql://42.192.160.95:3306/ruoyi-vue-pro?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456
+    password: GONGmysql5.7
 
   # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
   redis:
-    host: 127.0.0.1 # 地址
+    host: 42.192.160.95 # 地址
     port: 6379 # 端口
     database: 0 # 数据库索引
+    timeout: 5000
 
   # Servlet 配置
   servlet:
